@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Women's Day Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>International Women's Day <span class="year">2025</span></h1>
+            <p class="tagline">Celebrating the strength, resilience, and beauty in every woman</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="video-container">
+                <video id="videoElement" autoplay playsinline></video>
+                <div class="overlay" id="messageOverlay"></div>
+            </div>
+            
+            <div id="interaction-area">
+                <div id="initial-prompt">
+                    <h2>Hello there!</h2>
+                    <p>I'd love to celebrate you today.</p>
+                    <button id="startButton" class="primary-button">Start Experience</button>
+                </div>
+                
+                <div id="name-prompt" class="hidden">
+                    <h2>What's your name?</h2>
+                    <p>(Please speak when the microphone is active)</p>
+                    <div class="status-indicator">
+                        <div id="listening-indicator" class="pulse"></div>
+                        <span id="status-text">Click to activate microphone</span>
+                    </div>
+                    <button id="micButton" class="primary-button">Activate Microphone</button>
+                </div>
+                
+                <div id="message-area" class="hidden">
+                    <h2 id="greeting">Hello, </h2>
+                    <p id="personal-message"></p>
+                    <button id="newMessageButton" class="secondary-button">Give me another message</button>
+                    <button id="restartButton" class="primary-button">Restart Experience</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Created for International Women's Day 2025 | #EmpowerWomen #IWD2025 | U know Aaryan</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
